@@ -1,0 +1,562 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle&family=Teko:wght@300;400&family=Yanone+Kaffeesatz:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+html {
+  padding: 0;
+  margin: 0;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  text-decoration: none;
+  list-style: none;
+}
+nav {
+  background: #46C1F3;
+  height: 80px;
+  width: 100%;
+  font-family: 'Rajdhani', sans-serif;
+  position: fixed;
+  z-index: 100;
+}
+label.logo {
+  color: white;
+  font-family: 'Righteous', cursive;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a {
+  color: white;
+  font-size: 22px;
+  text-transform: uppercase;
+  padding: 7px 13px;
+  border-radius: 3px;
+}
+a:hover {
+  background: #0FA0DC;
+  transition: 0.3s;
+}
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 30px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+@media (max-width: 1009px){
+  label.logo {
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a {
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px){
+  .checkbtn {
+    display: block;
+  }
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #5AA7C7;
+    top: 80px;
+    left:100%;
+    text-align: center;
+    transition:all 0.5s;
+  }
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a {
+    font-size: 20px;
+  }
+  a:hover{
+    background: none;
+    color: #64C9F2;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+}
+.container {
+  max-width: 1152px;
+  margin: 0 auto;
+  padding: 0 15px;
+  margin-bottom: 4rem;
+}
+@media (max-width: 390px) {
+ header label.logo {
+    position:absolute;
+   padding-left: 10px;
+  }
+}
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1152px;
+  }
+}
+
+section{
+  max-width: 100%;
+  background: #eee;
+}
+#hero img{
+  width: 500px;
+  transition:all 0.3s ease;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+  margin-bottom: 100px;
+}
+#hero img:hover {
+  transform: scale(1.1);
+}
+.welcome {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.imtiaz h4 {
+  font-family: 'Teko', sans-serif;
+  font-size: 25px;
+}
+.imtiaz h1 {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+}
+.imtiaz h1 span {
+  color: #f437e0;
+}
+.imtiaz p {
+  font-family: 'Dongle', sans-serif;
+  font-size: 25px;
+}
+section.about {
+  background: #fff;
+  display: flex;
+  align-items: center;
+  padding: 4rem 3rem;
+  margin: 3rem 2rem;
+  margin-right: 0;
+}
+.about .container {
+  display: flex;
+  align-items: center;
+  padding: 40px 70px;
+  margin: 40px 100px;
+  background-color: #eee;
+  transition: all 0.3s ease;
+  margin-bottom: 10rem;
+}
+
+.mypic img {
+  width: 300px;
+  margin-right: 1.5rem;
+  padding-top: 6rem;
+}
+.abme {
+  margin-left: 10px;
+  padding-top: 6rem;
+}
+.abme h1 {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+
+}
+.abme h1 span {
+    color: #f437e0;
+}
+.abme p {
+  font-family: 'Dongle', sans-serif;
+  font-size: 30px;
+  line-height: 25px;
+}
+
+.section-heading {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 5rem;
+  padding-top: 6rem; 
+}
+.section-heading span {
+  color: #f437e0;
+}
+.services span {
+  color: #f437e0;
+}
+section.services .card-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 3rem;
+  grid-row-gap: 3rem;
+  margin: 20px 40px;
+  padding: 30px 60px;
+  justify-content: center;
+  text-align: center;
+}
+section.services .card-wrapper .card {
+  background-color: white;
+  padding: 3rem 2rem;
+  position: relative;
+  margin-bottom: 3rem;
+  padding-top: 5rem;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+section.services .card-wrapper .card i {
+  padding: 1.5rem;
+  font-size: 3rem;
+  position: absolute;
+  top: -3.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+.card-wrapper .card h3 {
+font-family: 'Yanone Kaffeesatz', sans-serif;
+font-size: 30px;
+text-align: center;
+margin-bottom: 1.5rem;
+transition: all 0.3s ease;
+}
+.card-wrapper .card p {
+  font-family: 'Dongle', sans-serif;
+  font-size: 25px;
+  line-height: 1.1;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+section.services .card-wrapper .card:hover {
+  background-color: black;
+}
+section.services .card-wrapper .card:hover h3 {
+  color: white;
+}
+section.services .card-wrapper .card:hover p {
+  color:white;
+}
+section.services .card-wrapper .card:hover i {
+  background-color: white;
+  color: black;
+}
+.projects .section-heading {
+  padding-top: 6rem; 
+}
+.projects .section-heading span {
+  color: #f437e0;
+}
+.projects {
+  text-align: center;
+}
+.projects .container {
+  text-align: center;
+  margin-bottom: 4rem;
+  background-color: #eee;
+}
+.projects .card-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 4rem;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 20px 60px;
+  margin-bottom: 4rem;
+}
+.projects .card-wrapper img {
+  height: auto;
+  width: 100%;
+  object-fit: fill;
+  border-radius: 10px;
+}
+
+.projects .container .card-wrapper .card2 {
+  background-color: white;
+  transition: all 0.3s ease;
+  height: 280px;
+}
+.projects .container .card-wrapper .card2 h3 {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 1rem;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  padding-top: 1rem;
+}
+.projects .container .card-wrapper .card2 h3 span {
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.projects .container .card-wrapper .card2:hover h3 span {
+  color: black;
+}
+.projects .container .card-wrapper a {
+  text-decoration: none;
+  color: black;
+}
+section.contact .container {
+  background-color: #eee;
+  margin-bottom: 0;
+}
+section.contact .card-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 3rem;
+  grid-row-gap: 3rem;
+  margin: 20px 40px;
+  padding: 30px 60px;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+section.contact .card-wrapper .card3 {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+section.contact .card-wrapper .card3 i{
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+section.contact .card-wrapper .card3 h3 {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+section.contact .card-wrapper .card3 p {
+  font-family: 'Dongle', sans-serif;
+  font-size: 25px;
+  line-height: 1.1;
+}
+section.contact .input1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+  margin: 1.5rem 3rem;
+}
+
+section.contact .input2 {
+  display: flex;
+  flex-direction: column;
+  margin: 1.5rem 3rem;
+  margin-bottom: 2rem;
+}
+section.contact input {
+  margin-bottom: 1.5rem;
+  padding: 0.8rem;
+  border:1px solid #E5E5E5;
+  font-size: 1rem;
+  font-family: 'Teko', sans-serif;
+}
+section.contact input:focus {
+  outline: none;
+}
+section.contact .input2 input {
+  margin-bottom: 3rem;
+  border:1px solid #E5E5E5;
+}
+section.contact .input2 textarea {
+  padding: 0.5rem;
+  border:1px solid #E5E5E5;
+  font-size: 1rem;
+  font-family: 'Teko', sans-serif;
+}
+section.contact .input2 textarea:focus {
+  outline: none;
+}
+section.contact form .btn2 {
+  text-align: center;
+}
+.button {
+  padding: 0.7rem 2rem;
+  background-color: #46C1F3;
+  font-family: 'Teko', sans-serif;
+  font-size: 1.5rem;
+  border:1px solid transparent;
+  margin-top: 1.5rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  border-radius: 5px;
+  font-style: uppercase;
+  margin-bottom: 1rem;
+}
+.button:hover {
+  outline: none;
+  background-color: #0FA0DC;
+  cursor: pointer;
+  color: white;
+}
+footer {
+  background: #46C1F3;
+  text-align: center;
+  height: 180px;
+}
+footer label.logo {
+  color: white;
+  font-family: 'Righteous', cursive;
+  font-size: 35px;
+  font-weight: bold;
+  text-align: center;
+  padding: 0 50px;
+}
+footer .social {
+  text-align: center;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 2rem;
+}
+footer .social .icon i {
+  padding: 0 6px;
+  margin-top: 1.5rem;
+  transition: all 0.2s ease;
+}
+footer .social .icon i:hover {
+  transform: scale(1.5);
+}
+@media (max-width: 800px) {
+  #hero img {
+    width: 400px;
+  }
+  .button {
+    font-size: 1rem;
+
+  }
+}
+@media (max-width: 1200px) {
+  .projects .container .card-wrapper .card2 {
+    height: 228px;
+  }
+}
+@media (max-width: 1024px) {
+  .mypic img {
+    width: 250px;
+  }
+  section.services .card-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .projects .container .card-wrapper .card2 {
+    height: 190px;
+  }
+  form {
+    padding-bottom: 4rem;
+  }
+
+}
+
+@media (max-width: 1009px) {
+  footer label.logo {
+    font-size: 30px;
+  }
+  footer .social {
+    font-size: 1.5rem;
+  }
+  footer {
+    height: 150px;
+    line-height: 10px;
+  }
+}
+@media (max-width: 768px) {
+  .card2 h3 span {
+    display: none;
+  }
+}
+@media (max-width: 576px) {
+  .welcome {
+    flex-direction: column;
+  }
+  .web-design {
+    position: absolute;
+    top: 350px;
+    text-align: center;
+  }
+  #hero img {
+    width: 300px;
+  }
+  section.about {
+    flex-direction: column;
+    margin-left: 0;
+  }
+  .abme {
+    margin-left: 0;
+    padding-top: 3rem;
+    text-align: center;
+  }
+  .mypic img {
+    margin-right: 0;
+  }
+  section.services .card-wrapper {
+    grid-template-columns: 1fr;
+    padding: 30px 0px;
+  }
+  section.contact .input1 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+ 
+  .projects .card-wrapper {
+    grid-template-columns: 1fr;
+  }
+  section.contact .card-wrapper {
+    grid-template-columns: 1fr;
+  }
+  footer label.logo {
+    font-size: 20px;
+  }
+  footer .social {
+    font-size: 1rem;
+  }
+  footer {
+    height: 130px;
+    line-height: 1px;
+  }
+
+}

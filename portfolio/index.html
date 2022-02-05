@@ -1,0 +1,176 @@
+
+  <!DOCTYPE html>
+  <html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <script src="https://kit.fontawesome.com/f1d3a2f7ad.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css"  />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">PORTFOLIO</label>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#about_me">About Me</a></li>
+          <li><a href="#Services">Services</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact_me">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="welcome" id="welcome">
+      <div class="image" id="hero">
+        <img src="images\my_pic.png" alt="My Pic" />
+      </div>
+      <div class="imtiaz web-design">
+        <h4>HI !</h4>
+        <h1>I'm Imtiaz <span>Bhuiyan</span></h1>
+        <p>I'm a professional web designer.</p>
+        <div>
+          <button class="button">Download CV</button>
+        </div>
+      </div>
+    </div>
+    <section class="about" id="about_me">
+        <div class="mypic">
+          <img src="images\me.jpg"/>
+        </div>
+        <div class="abme">
+          <h1>About <span>Me</span></h1>
+          <p>Hello! I'm Ahamed Imtiaz Bhuiyan.I'm a professional web designer.My skills are HTML,CSS,CSS Flexbox,CSS Grid etc.If you want to hire me, please go to contact section.</p>
+        </div>
+    </section>
+    <section class="services" id="Services">
+      <div class="container">
+        <h1 class="section-heading">My <span>Services</span></h1>
+        <div class="card-wrapper">
+          <div class="card">
+            <i class="fas fa-code"></i>
+            <h3>Front-End Developer</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+          </div>
+          <div class="card">
+            <i class="fas fa-desktop"></i>
+            <h3>Responsive Web Design</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+          </div>
+          <div class="card">
+            <i class="fab fa-js-square"></i>
+            <h3>Javascript</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+          </div>
+          <div class="card">
+            <i class="fab fa-react"></i>
+            <h3>React</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+          </div>
+          <div class="card">
+            <i class="fas fa-paint-brush"></i>
+            <h3>Graphic Design</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+          </div>
+          <div class="card">
+            <i class="fas fa-briefcase"></i>
+            <h3>Media Marketing</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="projects" id="projects">
+      <div class="container">
+       <h1 class="section-heading">My <span>Projects</span></h1>
+       <div class="card-wrapper">
+        <a href="https://codepen.io/Imtiaz001/full/LYOpbYP" target="_blank">
+          <div class="card2">
+            <img src="images/tribute_page.PNG">
+            <h3><span>&lt;&#47;</span>Tribute Page<span>&gt;</span></h3>
+          </div>
+        </a>
+        <a href="https://codepen.io/Imtiaz001/full/dyZYpBy" target="_blank">
+          <div class="card2">
+            <img src="images/product_landing_page.PNG">
+            <h3><span>&lt;&#47;</span>Product Landing Page<span>&gt;</span></h3>
+          </div>
+        </a>
+        <a href="https://codepen.io/Imtiaz001/full/GRMLJjq" target="_blank">
+          <div class="card2">
+            <img src="images/survey_form.PNG">
+            <h3><span>&lt;&#47;</span>Survey Form<span>&gt;</span></h3>
+          </div>
+        </a>
+        <a href="https://codepen.io/Imtiaz001/full/rNYOMqr" target="_blank">
+          <div class="card2">
+            <img src="images/documentation.PNG">
+            <h3><span>&lt;&#47;</span>Technical Documentation Page<span>&gt;</span></h3>
+          </div>
+        </a>
+      </div>
+       <div class="showall">
+        <a href="https://codepen.io/your-work/" target="_blank">
+        <button class="button">Show All</button>
+        </a>
+      </div>
+  </div>
+</section>
+<section class="contact" id="contact_me">
+  <div class="container">
+    <div class="section-heading">
+      Contact<span> Me</span>
+    </div>
+    <div class="card-wrapper">
+      <div class="card3">
+        <i class="fas fa-mobile-alt"></i>
+        <h3>Call Me On</h3>
+        <p>+0123 456 789</p>
+      </div>
+      <div class="card3">
+        <i class="far fa-envelope"></i>
+        <h3>Email Me</h3>
+        <p>abcdefg@gmail.com</p>
+      </div>
+      <div class="card3">
+        <i class="fas fa-map-marked-alt"></i>
+        <h3>Visit Me</h3>
+        <p>123 Main Street, New York, NY 10030</p>
+      </div>
+    </div>
+    <form>
+      <div class="input1">
+        <input type="text" name="your_name" placeholder="Your Name.." required>
+        <input type="Email" name="your_email" placeholder="Your Email.." required>
+      </div>
+      <div class="input2">
+        <input type="text" name="subject" placeholder="Your Subject.." required>
+        <textarea placeholder="Your Message.." cols="20" rows="10" required></textarea>
+      </div>
+      <div class="btn2">
+        <button class="button">Send Message</button>
+      </div>
+    </form>  
+  </div>
+</section>
+<footer>
+        <label class="logo">
+          PORTFOLIO
+        </label>
+    <div class="social">
+      <h4>Follow me on social media:</h4>
+      <div class="icon">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-linkedin-in"></i>
+      </div>
+    </div>
+</footer>
+</body>
+</html>
